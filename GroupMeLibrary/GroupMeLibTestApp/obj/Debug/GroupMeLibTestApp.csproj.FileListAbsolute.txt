@@ -9,3 +9,16 @@ c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTest
 c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.Form1.resources
 c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.exe
 c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.pdb
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibTestApp.exe.config
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibTestApp.exe
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibTestApp.pdb
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibrary.dll
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibrary.pdb
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.Form1.resources
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.Properties.Resources.resources
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.csproj.GenerateResource.Cache
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.exe
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.pdb
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\Newtonsoft.Json.xml

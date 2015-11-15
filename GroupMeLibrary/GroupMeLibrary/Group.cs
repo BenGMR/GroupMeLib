@@ -4,37 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace GroupMeLibrary
 {
-    [DataContract]
+    [JsonObject]
     public class Group
     {
-        public Group()
-        {
-
-        }
-        [DataMember(Name = "id")]
+        [JsonProperty(PropertyName = "id")]
         private long _id;
-        /*public long ID
+        public long ID
         {
             get
             {
                 return _id;
             }
-        }*/
+        }
 
-        [DataMember(Name = "name")]
-        private string _family;
-        public string Family
+        [JsonProperty(PropertyName = "name")]
+        private string _name;
+        public string Name
         {
             get
             {
-                return _family;
+                return _name;
             }
         }
 
-        [DataMember(Name = "type")]
+        [JsonProperty(PropertyName = "type")]
         private string _type;
         public string Type
         {
@@ -44,7 +41,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "description")]
+        [JsonProperty(PropertyName = "description")]
         private string _description;
         public string Description
         {
@@ -54,7 +51,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "image_url")]
+        [JsonProperty(PropertyName = "image_url")]
         private string _imageURL;
         public string ImageURL
         {
@@ -64,7 +61,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "creator_user_id")]
+        [JsonProperty(PropertyName = "creator_user_id")]
         private long _creatorID;
         public long CreatorID
         {
@@ -73,28 +70,28 @@ namespace GroupMeLibrary
                 return _creatorID;
             }
         }
-        /*
-        [DataMember(Name = "created_at")]
-        private DateTime _createdAt;
+        
+        [JsonProperty(PropertyName = "created_at")]
+        private long _createdAt;
         public DateTime CreatedAt
         {
             get
             {
-                return _createdAt;
+                return InfoGrabber.UnixToDateTime(_createdAt);
             }
         }
 
-        [DataMember(Name = "updated_at")]
-        private DateTime _updatedAt;
+        [JsonProperty(PropertyName = "updated_at")]
+        private long _updatedAt;
         public DateTime UpdatedAt
         {
             get
             {
-                return _updatedAt;
+                return InfoGrabber.UnixToDateTime(_updatedAt);
             }
         }
-        */
-        [DataMember(Name = "members")]
+        
+        [JsonProperty(PropertyName = "members")]
         private Member[] _members;
         public Member[] Members
         {
@@ -104,7 +101,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "share_url")]
+        [JsonProperty(PropertyName = "share_url")]
         private string _shareURL;
         public string ShareURL
         {
@@ -114,9 +111,9 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "messages")]
-        private Messages _messages;
-        public Messages Messages
+        [JsonProperty(PropertyName = "messages")]
+        private MessageCollection _messages;
+        public MessageCollection Messages
         {
             get
             {

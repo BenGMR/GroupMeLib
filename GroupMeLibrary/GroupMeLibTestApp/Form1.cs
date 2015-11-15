@@ -22,13 +22,16 @@ namespace GroupMeLibTestApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            InfoGrabber info = new InfoGrabber("");
+            InfoGrabber info = new InfoGrabber("G8ASG3y6qqityZLznv5vQAhFH5Vgmwnj6fVgytsV");
 
             try
             {
+                //Group[] groups = info.GetGroups();
                 //Group group = info.GetGroupByID(2449248);
-                Group[] groups = info.GetGroups();
-                Group group = info.GetGroupByID(2449248);
+
+                MessageResponse msg = info.GetGroupMessages(2449248);
+
+                MessageBox.Show(msg.Messages.Count.ToString());
             }
             catch (WebException ex)
             {

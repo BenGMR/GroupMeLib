@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -7,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace GroupMeLibrary
 {
-    [DataContract]
+    [JsonObject]
     public class Member
     {
-        [DataMember(Name = "user_id")]
+        [JsonProperty(PropertyName = "user_id")]
         private long _id;
         public long ID
         {
@@ -20,7 +21,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "nickname")]
+        [JsonProperty(PropertyName = "nickname")]
         private string _nickName;
         public string NickName
         {
@@ -30,7 +31,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "muted")]
+        [JsonProperty(PropertyName = "muted")]
         private bool _muted;
         public bool Muted
         {
@@ -40,7 +41,7 @@ namespace GroupMeLibrary
             }
         }
 
-        [DataMember(Name = "image_url")]
+        [JsonProperty(PropertyName = "image_url")]
         private string _imageURL;
         public string ImageURL
         {
