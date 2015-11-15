@@ -1,0 +1,5 @@
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibrary\bin\Debug\GroupMeLibrary.dll
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibrary\bin\Debug\GroupMeLibrary.pdb
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibrary\obj\Debug\GroupMeLibrary.dll
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibrary\obj\Debug\GroupMeLibrary.pdb
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibrary\obj\Debug\GroupMeLibrary.csprojResolveAssemblyReference.cache

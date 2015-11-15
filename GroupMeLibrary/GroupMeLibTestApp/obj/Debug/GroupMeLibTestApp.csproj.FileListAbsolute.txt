@@ -1,0 +1,11 @@
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.csprojResolveAssemblyReference.cache
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.Properties.Resources.resources
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.csproj.GenerateResource.Cache
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibTestApp.exe.config
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibTestApp.exe
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibTestApp.pdb
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibrary.dll
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\bin\Debug\GroupMeLibrary.pdb
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.Form1.resources
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.exe
+c:\users\ben\documents\visual studio 2015\Projects\GroupMeLibrary\GroupMeLibTestApp\obj\Debug\GroupMeLibTestApp.pdb
