@@ -29,9 +29,13 @@ namespace GroupMeLibTestApp
                 //Group[] groups = info.GetGroups();
                 //Group group = info.GetGroupByID(2449248);
 
-                MessageResponse msg = info.GetGroupMessages(2449248);
+                //MessageResponse msg = info.GetGroupMessages(2449248);
 
-                MessageBox.Show(msg.Messages.Count.ToString());
+                //MessageBox.Show(msg.Messages.Count.ToString());
+
+                //GroupResponse grp = info.GetFormerGroups();
+
+                info.CreateGroup("DELETEME");
             }
             catch (WebException ex)
             {

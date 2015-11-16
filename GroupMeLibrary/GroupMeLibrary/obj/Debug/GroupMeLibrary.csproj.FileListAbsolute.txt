@@ -9,3 +9,4 @@ C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibrary\obj\Debug
 C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibrary\obj\Debug\GroupMeLibrary.pdb
 C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibrary\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ben\Documents\GitHub\GroupMeLib\GroupMeLibrary\GroupMeLibrary\obj\Debug\GroupMeLibrary.csprojResolveAssemblyReference.cache

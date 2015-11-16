@@ -52,6 +52,7 @@
     <Compile Include="Attachment.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="InfoGrabber.cs" />
+    <Compile Include="JsonGroupSerializer.cs" />
     <Compile Include="Member.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="MessageCollection.cs" />
@@ -64,6 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\Newtonsoft.Json.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
