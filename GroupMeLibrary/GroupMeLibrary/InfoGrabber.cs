@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization.Json;
 using System.IO;
+using System.Net.Http;
 
 namespace GroupMeLibrary
 {
@@ -100,48 +101,28 @@ namespace GroupMeLibrary
         /// <returns></returns>
         public void CreateGroup(string name, string description="", string imageURL="", bool share=false)
         {
+            //Thanks to http://stackoverflow.com/questions/25306570/convert-curl-to-c-sharp
+
             string urlToCall = string.Format(Statics.BaseURL + "/groups" +_apiKey);
 
             JsonGroupSerializer grpToCreate = new JsonGroupSerializer(name);
-
-            string jsonConversion;
+            string jsonString = JsonConvert.SerializeObject(grpToCreate);
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(urlToCall);
             request.Method = "POST";
-            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentType = "application/json";
 
-            MemoryStream ms = new MemoryStream();
-            string json = JsonConvert.SerializeObject(grpToCreate);
-            byte[] jsonbytes = GetBytes(json);
-            ms.Read(jsonbytes, 0, jsonbytes.Length);
-            string jsonString = Encoding.UTF8.GetString(ms.ToArray());
-            
-            StreamWriter writer = new StreamWriter(request.GetRequestStream());
-            writer.Write(json);
-            writer.Close();
-
-            /*try
+            using (StreamWriter streamWriter = new StreamWriter(request.GetRequestStream()))
             {
-                
-                jsonConversion = JsonConvert.SerializeObject(grpToCreate);
-                byte[] bytes = Encoding.UTF8.GetBytes(jsonConversion);
-                request.Credentials = CredentialCache.DefaultCredentials;
-                request.ContentLength = bytes.Length;
-                
-                Stream dataStream = request.GetRequestStream();
-
-                dataStream.Write(bytes, 0, bytes.Length);
-                dataStream.Close();
-
-                WebResponse response = request.GetResponse();
-                response.Close();
-                //response = JsonConvert.DeserializeObject<GroupResponse>(webClient.DownloadString(string.Format(urlToCheck)));
+                streamWriter.Write(jsonString);
             }
-            catch (Exception ex)
+
+            WebResponse response = request.GetResponse();
+            string text;
+            using (var sr = new StreamReader(response.GetResponseStream()))
             {
-                throw new Exception(string.Format("{0}", ex.Message));
+                text = sr.ReadToEnd();
             }
-            */
         }
 
         static byte[] GetBytes(string str)
