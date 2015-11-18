@@ -15,12 +15,73 @@ namespace GroupMeLibrary
             name = Name;
             description = Description;
             share = Share;
+            imageURL = ImageURL;
+            officeMode = OfficeMode;
         }
         [JsonProperty(PropertyName ="name")]
         string name;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
         [JsonProperty(PropertyName = "description")]
         string description;
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+            set
+            {
+                description = value;
+            }
+        }
+        [JsonProperty(PropertyName = "image_url")]
+        string imageURL;
+        public string ImageURL
+        {
+            get
+            {
+                return imageURL;
+            }
+            set
+            {
+                imageURL = value;
+            }
+        }
+        [JsonProperty(PropertyName = "office_mode")]
+        bool officeMode;
+        public bool OfficeMode
+        {
+            get
+            {
+                return officeMode;
+            }
+            set
+            {
+                officeMode = value;
+            }
+        }
         [JsonProperty(PropertyName = "share")]
         bool share;
+        public bool Share
+        {
+            get
+            {
+                return share;
+            }
+            set
+            {
+                share = value;
+            }
+        }
     }
 }

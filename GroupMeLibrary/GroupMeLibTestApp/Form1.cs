@@ -26,16 +26,18 @@ namespace GroupMeLibTestApp
 
             try
             {
-                //Group[] groups = info.GetGroups();
-                //Group group = info.GetGroupByID(2449248);
+                //GroupResponse groups = info.GetGroups();
+                GroupResponse group = info.GetGroup(18006736);
 
                 //MessageResponse msg = info.GetGroupMessages(2449248);
 
                 //MessageBox.Show(msg.Messages.Count.ToString());
 
                 //GroupResponse grp = info.GetFormerGroups();
+                //18006736
+                GroupResponse response = info.UpdateGroup(18006736, "", "Delete this group22", "http://i.imgur.com/6suBBX7.jpg", true, true);
 
-                info.CreateGroup("DELETEME");
+
             }
             catch (WebException ex)
             {

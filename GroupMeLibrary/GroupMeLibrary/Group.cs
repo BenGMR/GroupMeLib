@@ -120,5 +120,33 @@ namespace GroupMeLibrary
                 return _messages;
             }
         }
+
+        [JsonProperty(PropertyName = "office_mode")]
+        bool officeMode;
+        public bool OfficeMode
+        {
+            get
+            {
+                return officeMode;
+            }
+            set
+            {
+                officeMode = value;
+            }
+        }
+
+        [JsonProperty(PropertyName = "share")]
+        bool share;
+        public bool Share
+        {
+            get
+            {
+                return share;
+            }
+            set
+            {
+                share = value;
+            }
+        }
     }
 }
